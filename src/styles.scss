@@ -1,0 +1,66 @@
+$light-blue: rgb(173, 216, 233);
+$gray: rgb(134, 131, 131);
+$dark-gray: rgb(117, 109, 109);
+$white: white;
+
+body{
+    margin: 0 auto;
+    background-image: linear-gradient(to left, $light-blue, rgb(255, 253, 253));
+    align-items: center;
+    justify-content: center;
+}
+
+.App {
+    width: 1200px;
+    margin: 0 auto;
+    &-title{
+        text-align: center;
+        color: $gray;
+        font-size: 60px;
+    }
+    &-block{
+        margin: 0 auto;
+        width: 700px;
+        &-input{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            input {
+                color: $gray;
+                font-size: 20px;
+                border: none;
+                border-radius: 20px;
+                width: 540px;
+                padding: 9px 15px;
+            }
+            input:focus-visible{
+                outline: 1px solid $light-blue;
+            }
+        }  
+        &-button{
+            background-color: $white;
+            border: 1px solid $gray;
+            border-radius: 20px;
+            color: $gray;
+            font-size: 20px;
+            padding: 6px 18px;
+        }
+        &-li{
+            list-style-type: none;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: 5fr 1fr 1fr;
+            grid-column-gap: 5px;
+            margin-left: -30px;
+            color: $dark-gray;
+            font-size: 25px;
+            &-checkbox{
+                margin-right: 10px; 
+            }
+            &-crossed{
+                text-decoration: line-through;
+            }
+        }
+    }
+}

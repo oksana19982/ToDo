@@ -1,0 +1,84 @@
+body {
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, right top, left top, from(#add8e9), to(#fffdfd));
+  background-image: linear-gradient(to left, #add8e9, #fffdfd);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.App-title {
+  text-align: center;
+  color: #868383;
+  font-size: 60px;
+}
+
+.App-block {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.App-block-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.App-block-input input {
+  color: #868383;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  width: 540px;
+  padding: 9px 15px;
+}
+
+.App-block-input input:focus-visible {
+  outline: 1px solid #add8e9;
+}
+
+.App-block-button {
+  background-color: white;
+  border: 1px solid #868383;
+  border-radius: 20px;
+  color: #868383;
+  font-size: 20px;
+  padding: 6px 18px;
+}
+
+.App-block-li {
+  list-style-type: none;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr 1fr;
+      grid-template-columns: 5fr 1fr 1fr;
+  grid-column-gap: 5px;
+  margin-left: -30px;
+  color: #756d6d;
+  font-size: 25px;
+}
+
+.App-block-li-checkbox {
+  margin-right: 10px;
+}
+
+.App-block-li-crossed {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=styles.css.map */
